@@ -129,7 +129,7 @@ const App = ({todos, dispatch}) =>{
                 clearCompleted={handleClearCompleted} />             
 
             {todos.map((item,idx)=>(
-                <div key={idx} className='mt-4 todo-item col-12 col-sm-11 col-md-9 col-lg-6 col-xl-5'>
+                <div key={idx} className='mt-4 todo-item col-sm-10 col-md-8 col-lg-6 col-xl-5'>
                     <div className='todo'>
                         <TodoComplete complete={()=>handleCompleteTodo(idx)} 
                             setStyle={item.isCompleted} />
